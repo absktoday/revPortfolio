@@ -21,6 +21,8 @@ body {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     -webkit-animation: TextColorAnimation 7s ease-in-out infinite;
     -moz-animation: TextColorAnimation 7s ease-in-out infinite;
     animation: TextColorAnimation 7s ease-in-out infinite;
