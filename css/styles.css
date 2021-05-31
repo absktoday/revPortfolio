@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #111111;
+    margin: 0 5%;
+
+}
+
+.hero-bg {
+    margin-top: 2em;
+}
+.hero-bg h1 {
+    font-size: 3rem;
+    background: linear-gradient(120deg, #8e2de2, #4a00e0, #6dd5ed);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    -webkit-animation: TextColorAnimation 7s ease-in-out infinite;
+    -moz-animation: TextColorAnimation 7s ease-in-out infinite;
+    animation: TextColorAnimation 7s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes TextColorAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes TextColorAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes TextColorAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.hero-bg span {
+    display: block;
+}
+
+.right-col {
+    margin: auto 10%;
+    text-align: center;
+    grid-area: content;
+}
+
+img {
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.card {
+    grid-area: image;
+    background-color: #191919;
+    border-radius: 1em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.project-card {
+    background-color: #191919;
+    border-radius: 1em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+section {
+    text-align: end;
+    margin-top: 2em;
+}
+
+section h2 {
+    margin-top: 0.2em;
+    padding: 0 10%;
+    font-size: 2.5em;
+}
+
+section h5 {
+    padding: 0 10%;
+    margin-bottom: 0;
+    color: #9C9C9C;
+}
+
+section img{
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 730px) {
+
+    body {
+        margin: 0 5%;
+    }
+
+}
+
+@media (min-width: 930px) {
+
+
+
+    .hero-bg {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "content image";
+    }
+
+    .right-col {
+        text-align: left;
+        grid-area: content;
+    }
+
+    .card {
+        grid-area: image;
+    }
+
+
+}
+
+@media (min-width: 1200px) { 
+    body {
+        margin: 0 10%;
+    }
+}
+
+@media (min-width: 1400px) { 
+    body {
+        margin: 0 15%;
+    }
+}
+
+@media (min-width: 2200px) { 
+    body {
+        margin: 0 20%;
+    }
+}
+
