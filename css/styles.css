@@ -13,7 +13,7 @@ body {
     margin-top: 2em;
 }
 .hero-bg h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   
     background: linear-gradient(120deg, #8e2de2, #4a00e0, #6dd5ed);
     background-size: 400%;
@@ -118,6 +118,10 @@ section img{
         margin: 0 5%;
     }
 
+    .hero-bg h1 {
+        font-size: 2.5rem;
+    }
+
 }
 
 @media (min-width: 930px) {
@@ -146,17 +150,28 @@ section img{
     body {
         margin: 0 10%;
     }
+
+    .hero-bg h1 {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 1400px) { 
     body {
         margin: 0 15%;
     }
+    .hero-bg h1 {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 2200px) { 
     body {
         margin: 0 20%;
+    }
+
+    .hero-bg h1 {
+        font-size: 3.5rem;
     }
 }
 
