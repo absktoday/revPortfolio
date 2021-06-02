@@ -15,7 +15,7 @@ body {
 .hero-bg h1 {
     font-size: 2rem;
   
-    background: linear-gradient(120deg, #8e2de2, #4a00e0, #6dd5ed);
+    background: linear-gradient(120deg, #8e2de2, #4a00e0, #007FE0);
     background-size: 400%;
     background-clip: text;
     -webkit-background-clip: text;
